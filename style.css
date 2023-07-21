@@ -1,0 +1,234 @@
+@import url(https://fonts.google.com/specimen/Libre+Franklin:wght@300;600;700);
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+header {
+    padding: 8.5rem 4.6rem 0;
+    margin-bottom: 6.8rem;
+}
+
+header img {
+    display: block;
+    height: 1.6rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.005em;
+    color: var(--Gray);
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+header h1 span {
+    font-weight: 600;
+    color: var(--Very-Dark-Blue);
+}
+header p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.005em;
+    color: var(--Very-Dark-Blue);
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+header form div input {
+    width: 100%;
+    outline: none;
+    height: 4rem;
+    border: 1px solid var(--Gray);
+    border-radius: 2rem;
+    padding: 0 3.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+
+header form div input::placeholder {
+    color: var(--Gray);
+}
+
+header form div input:focus {
+    border: 1px solid var(--Gray);
+}
+
+header form div span {
+    display: none;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    color: var(--Light-Red);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.005em;
+}
+
+header form button {
+    width: 100%;
+    border: 0;
+    height: 4rem;
+    background: var(--Blue);
+    border-radius: 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 8px rgba(79, 125, 243, 0.25);
+}
+
+header form button:hover {
+    background: hsla(223, 87%, 63%, 80);
+}
+
+main {
+    padding: 0 2.8rem;
+    margin-bottom: 12rem;
+}
+
+main img {
+    width: 100%;
+}
+
+footer {
+    padding: 0 2.8rem 2.8rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2.8rem;
+}
+
+footer ul li {
+    border: 1px solid var(--Gray);
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li:hover {
+    background: var(--Blue);
+    border-color: var(--Blue);
+}
+
+footer ul li ion-icon {
+    font-size: 16px;
+    color: var(--Blue);
+    transition: all 0.3s ease-in-out;
+}
+
+footer ul li:hover ion-icon {
+    color: white;
+}
+
+footer span {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.005em;
+    color: var(--Gray);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 8.5rem 0 0;
+        margin-bottom: 6.8rem;
+    }
+    header img {
+        height: 100%;
+        margin-bottom: 8.6rem;
+    }
+    header h1 {
+        font-size: 4.8rem;
+        line-height: 5.8rem;
+    }
+    header p {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 4rem;
+    }
+    header form {
+        display: flex;
+        gap: 1.6rem;
+    }
+    header form div {
+        flex: 1;
+    }
+    header form div input {
+        margin-bottom: 0;
+        height: 5.6rem;
+        border-radius: 2.8rem;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    header form div span {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        text-align: left;
+        padding-top: 1rem;
+        padding-left: 3.2rem;
+        margin: 0;
+    }
+    header form button {
+        max-width: 20rem;
+        height: 5.6rem;
+        border-radius: 2.8rem;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    main {
+        padding: 0;
+        margin-bottom: 7.2rem;
+    }
+    footer ul {
+        margin-bottom: 2.5rem;;
+    }
+    footer span {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+}
